@@ -5,7 +5,10 @@ node_modules
 .next
 .idea
 .env
+.env.local
 .env.production
 .vercel
 
 firestore-debug.log
+
+nextauth-firebase-adminsdk-yyyy.json
