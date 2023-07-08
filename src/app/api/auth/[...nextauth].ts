@@ -3,7 +3,7 @@ import type { NextAuthOptions } from 'next-auth';
 
 import CredentialsProvider from 'next-auth/providers/credentials';
 
-import { auth } from '@/firebase/admin';
+import { auth } from '../../../../firebase/admin';
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -23,6 +23,7 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   ],
+  //   以下は、authorizeで返したユーザ情報をSessionに格納するため
   session: {
     strategy: 'jwt',
   },
